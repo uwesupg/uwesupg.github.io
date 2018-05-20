@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指定したサイズの単色画像を作成</title>
+  </head>
+  <body>
+    <h1>指定したサイズの単色画像を作成</h1>
+    <p>幅と高さと色を指定して、作成ボタンを押してください。下に画像が表示されます。</p>
+    <label for="w">幅</label>
+    <input type="number" min="1" value="200" id="w">
+    <label for="h">高さ</label>
+    <input type="number" min="1" value="300" id="h">
+    <label for="cp">色</label>
+    <input type="color" id="cp">
+    <button id="button1">作成</button>
+    <div><img id="img1"></div>
+
+    <canvas id="cv" width="150" height="150" hidden></canvas>
+    <script type="text/javascript" src="ig.js"></script>
+  </body>
+</html>
